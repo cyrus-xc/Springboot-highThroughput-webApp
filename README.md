@@ -1,5 +1,11 @@
 # Getting Started
 
+This is a Springboot-based high-concurrency e-commerce seckill system supports MD5 encryption, multi-server load balancing, and up to one million simultaneous visits. The front end implements functions such as session storage, password verification, malicious access verification, and access current limiting. The backend implements the RabbitMQ message queue to reduce the database load, and uses the Redis database to reduce the data read and write delay.
+
+Use WSL to deploy a Redis server based on the local Linux system, which supports parallel expansion and load balancing.
+
+Technology stack: Springboot, Redis, MySQL, MyBatis plus, Ngix, RabbitMQ,
+
 ### Requirements
 
 MySQL 8.0.22 or higher: https://dev.mysql.com/downloads/mysql/ \
