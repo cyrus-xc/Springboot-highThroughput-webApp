@@ -1,0 +1,54 @@
+POST http://localhost:8080/login/doLogin?mobile=888888888&password=123456
+
+<> 2023-04-21T110256.500.json
+
+###
+
+POST http://localhost:63342/login/doLogin?mobile=888888888&password=123456
+
+<> 2023-04-21T095141.404.html
+
+###
+
+POST http://localhost:8080/login/doLogin?mobile=888888888&password=123456
+
+<> 2023-04-21T094707.200.txt
+
+###
+
+POST http://localhost:8080/login/doLogin?mobile=888888888&password=123456
+
+<> 2023-04-21T093014.200.txt
+
+###
+
+POST http://localhost:8080/login/doLogin?mobile=1231134134&password=123456
+
+<> 2023-04-21T092713.200.txt
+
+###
+
+POST http://localhost:8080/login/doLogin?mobile=1231134134&password=1231431
+
+<> 2023-04-21T092610.200.txt
+
+###
+
+POST http://localhost:8080/login/doLogin?mobile=1231134134&password=1231431
+
+<> 2023-04-21T092404.200.txt
+
+###
+
+POST http://localhost:8080/login/doLogin?mobile=1231134134&password=1231431
+
+<> 2023-04-21T092344.200.txt
+
+###
+
+POST http://localhost:8080/login/doLogin?mobile=1231134134&password=1231431
+
+<> 2023-04-21T092206.200.txt
+
+###
+
