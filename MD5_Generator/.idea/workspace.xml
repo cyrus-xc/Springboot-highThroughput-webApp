@@ -5,33 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39db7f16-62fc-4aef-87ab-cdab0d6a22eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/controller2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/entity2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/mapper2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/service2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/serviceImpl2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/mapper/GoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/pojo/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/valueObject/GoodsValueObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringWebApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringWebApp/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/variableObject/LoginVaribaleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/valueObject/LoginValueObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/variableObject/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/valueObject/RespBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/variableObject/RespBeanEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/valueObject/RespBeanEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,11 +84,23 @@
       <updated>1682045798896</updated>
       <workItem from="1682045800542" duration="2369000" />
       <workItem from="1682080488490" duration="1797000" />
-      <workItem from="1683056754338" duration="825000" />
+      <workItem from="1683056754338" duration="1010000" />
     </task>
+    <task id="LOCAL-00001" summary="clean out code generator">
+      <created>1683057755275</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683057755275</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="clean out code generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean out code generator" />
   </component>
 </project>
