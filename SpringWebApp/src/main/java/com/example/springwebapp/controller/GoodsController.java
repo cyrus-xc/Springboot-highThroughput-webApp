@@ -1,6 +1,7 @@
 package com.example.springwebapp.controller;
 
 import com.example.springwebapp.pojo.User;
+import com.example.springwebapp.service.IGoodsService;
 import com.example.springwebapp.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class GoodsController {
     @Autowired
     private IUserService userService;
+    @Autowired
+    private IGoodsService goodsService;
 
     @RequestMapping("/toList")
     public String toList(Model model, User user) {
@@ -24,6 +27,7 @@ public class GoodsController {
             return "redirect:/login";
         }
         model.addAttribute("user", user);
+        model.addAttribute("goodsList", goodsService.listGoods());
 
         return "goodsList";
     }

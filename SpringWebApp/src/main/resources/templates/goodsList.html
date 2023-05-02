@@ -2,10 +2,41 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org">
 <head>
+    <base href="/"/>
     <meta charset="UTF-8">
-    <title>GoodsList</title>
+    <title>Goods List</title>
+    <!-- jquery -->
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+    <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}">
+    </script>
+    <!-- layer -->
+    <script type="text/javascript" th:src="@{/layer/layer.js}"></script>
+    <!-- common.js -->
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
 </head>
 <body>
-<p th:text="'hello:'+${user.nickname}"></p>
+<div class="panel panel-default">
+    <div class="panel-heading">Item List</div>
+    <table class="table" id="goodslist">
+        <tr>
+            <td>Item name</td>
+            <td>Image</td>
+            <td>Price</td>
+            <td>Stock</td>
+            <td>Go item page</td>
+        </tr>
+        <tr th:each="goods,goodsStat : ${goodsList}">
+            <td th:text="${goods.name}"></td>
+            <td><img th:src="@{${goods.img}}" height="100"/>
+            </td>
+            <td th:text="${goods.price}"></td>
+            <td th:text="${goods.stock}"></td>
+            <td><a th:href="'/goods/toDetail/'+${goods.id}">more</a></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

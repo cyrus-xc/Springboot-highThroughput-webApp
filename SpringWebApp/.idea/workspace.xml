@@ -4,34 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3cf0dc7-fcc7-49d8-b0f2-a0c6cc665729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/controller2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/entity2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/mapper2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/service2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/serviceImpl2.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/mapper/GoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/pojo/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/GoodsValueObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MD5_Generator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MD5_Generator/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MD5_Generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MD5_Generator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/service/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" beforeDir="false" />
+    <list default="true" id="a3cf0dc7-fcc7-49d8-b0f2-a0c6cc665729" name="Changes" comment="code generate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/variableObject/LoginVaribaleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/LoginValueObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/variableObject/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/RespBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/variableObject/RespBeanEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/RespBeanEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IGoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/GoodsValueObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/GoodsValueObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/iphone11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/iphone11ProMax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/goodsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/goodsList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +29,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -78,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Drink/Desktop/cs9053-Java-hw-set/FinalProject/SpringWebApp/src/main/resources/mapper",
+    "last_opened_file_path": "C:/Users/Drink/Desktop/Springboot-highThroughput-webApp/SpringWebApp/src/main/resources/mapper",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -101,8 +86,11 @@
       <recent name="com.example.springwebapp.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Drink\Desktop\cs9053-Java-hw-set\FinalProject\SpringWebApp\src\main\resources\mapper" />
-      <recent name="C:\Users\Drink\Desktop\cs9053-Java-hw-set\FinalProject\SpringWebApp\src\main\java\com\example\springwebapp" />
+      <recent name="C:\Users\Drink\Desktop\Springboot-highThroughput-webApp\SpringWebApp\src\main\resources\mapper" />
+      <recent name="C:\Users\Drink\Desktop\Springboot-highThroughput-webApp\SpringWebApp\src\main\java\com\example\springwebapp\service" />
+      <recent name="C:\Users\Drink\Desktop\Springboot-highThroughput-webApp\SpringWebApp\src\main\java\com\example\springwebapp\pojo" />
+      <recent name="C:\Users\Drink\Desktop\Springboot-highThroughput-webApp\SpringWebApp\src\main\java\com\example\springwebapp\mapper" />
+      <recent name="C:\Users\Drink\Desktop\Springboot-highThroughput-webApp\SpringWebApp\src\main\java\com\example\springwebapp\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Drink\Desktop\cs9053-Java-hw-set\FinalProject\SpringWebApp\media" />
@@ -153,7 +141,7 @@
       <workItem from="1682222257907" duration="1607000" />
       <workItem from="1682226539200" duration="44000" />
       <workItem from="1682226773986" duration="1243000" />
-      <workItem from="1682802432873" duration="23212000" />
+      <workItem from="1682802432873" duration="27465000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy code generator">
       <created>1682048031107</created>
@@ -190,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683005737486</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="code generate">
+      <created>1683057791856</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683057791856</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +198,8 @@
     <MESSAGE value="开发前期准备完成" />
     <MESSAGE value="开发前期准备完成（debugged版）" />
     <MESSAGE value="redis session login" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis session login" />
+    <MESSAGE value="code generate" />
+    <option name="LAST_COMMIT_MESSAGE" value="code generate" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

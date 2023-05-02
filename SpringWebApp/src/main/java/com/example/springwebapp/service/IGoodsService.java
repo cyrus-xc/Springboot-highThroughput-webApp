@@ -2,6 +2,9 @@ package com.example.springwebapp.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.springwebapp.pojo.Goods;
+import com.example.springwebapp.valueObject.GoodsValueObject;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,9 @@ import com.example.springwebapp.pojo.Goods;
  */
 public interface IGoodsService extends IService<Goods> {
 
+    /**
+     * retrieve goods list
+     * @return
+     */
+    List<GoodsValueObject> listGoods();
 }

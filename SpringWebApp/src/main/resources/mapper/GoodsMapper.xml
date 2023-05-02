@@ -18,4 +18,9 @@
         id, name, title, img, detail, price, stock
     </sql>
 
+    <!-- 获取所有商品 -->
+    <select id="listGoods" resultType="com.example.springwebapp.valueObject.GoodsValueObject">
+        select * from t_goods WHERE stock > 0
+    </select>
+
 </mapper>
