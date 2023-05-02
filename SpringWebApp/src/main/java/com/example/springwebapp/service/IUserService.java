@@ -2,8 +2,8 @@ package com.example.springwebapp.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.springwebapp.pojo.User;
-import com.example.springwebapp.variableObject.LoginVaribaleObject;
-import com.example.springwebapp.variableObject.RespBean;
+import com.example.springwebapp.valueObject.LoginValueObject;
+import com.example.springwebapp.valueObject.RespBean;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
@@ -25,6 +25,6 @@ public interface IUserService extends IService<User> {
      * @param response
      * @return
      */
-    RespBean doLogin(LoginVaribaleObject data, HttpServletRequest request, HttpServletResponse response);
+    RespBean doLogin(LoginValueObject data, HttpServletRequest request, HttpServletResponse response);
     User getUserByCookie(String userTicket, HttpServletRequest request, HttpServletResponse response);
 }

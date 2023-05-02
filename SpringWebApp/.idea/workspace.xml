@@ -5,36 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3cf0dc7-fcc7-49d8-b0f2-a0c6cc665729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_6_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_90_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_90_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_90_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_90_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_90_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_90_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_90_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_6_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_6_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/config/UserArgumentResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cbf22d36-93d5-4d9e-a1ef-9c856814c137.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cbf22d36-93d5-4d9e-a1ef-9c856814c137.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/controller2.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/entity2.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/mapper2.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/service2.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/classes/templates/serviceImpl2.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MD5_Generator/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/mapper/GoodsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/pojo/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/GoodsValueObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MD5_Generator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MD5_Generator/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MD5_Generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MD5_Generator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/service/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MD5_Generator/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWebApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWebApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/variableObject/LoginVaribaleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/LoginValueObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/variableObject/RespBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/RespBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/variableObject/RespBeanEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/valueObject/RespBeanEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -86,6 +83,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "4734eadbbb62a8978c0a1681db3cacc1"
   },
@@ -155,7 +153,7 @@
       <workItem from="1682222257907" duration="1607000" />
       <workItem from="1682226539200" duration="44000" />
       <workItem from="1682226773986" duration="1243000" />
-      <workItem from="1682802432873" duration="16398000" />
+      <workItem from="1682802432873" duration="23212000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy code generator">
       <created>1682048031107</created>
@@ -185,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682081775468</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="redis session login">
+      <created>1683005737486</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683005737486</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +202,8 @@
     <MESSAGE value="generate code templates" />
     <MESSAGE value="开发前期准备完成" />
     <MESSAGE value="开发前期准备完成（debugged版）" />
-    <option name="LAST_COMMIT_MESSAGE" value="开发前期准备完成（debugged版）" />
+    <MESSAGE value="redis session login" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis session login" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,9 +1,8 @@
 package com.example.springwebapp.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * <p>
@@ -11,10 +10,10 @@ import org.springframework.stereotype.Controller;
  * </p>
  *
  * @author Chen XU
- * @since 2023-04-20
+ * @since 2023-05-02
  */
 @Controller
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/order")
+public class OrderController {
 
 }

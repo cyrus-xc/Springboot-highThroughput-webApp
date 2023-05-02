@@ -16,29 +16,80 @@ Other Java Version should work as well, just change the version in `pom.xml` fil
 
 #### Install MySQL
 1. Install MySQL with link provide above.
+
 2. Make sure MySQL is running on your machine, on Windows, you can run `net start mysql` in command line to start MySQL service.
-3. Create a database named `springwebapp` in MySQL, then run this SQL script:``
+
+3. Create a database named `springwebapp` in MySQL. Next we need to create 3 tables.
+
+4. Create a table named `t_user` in the database, you can simply run this SQL script:
+
+   ```sql
+   CREATE TABLE `t_user` (
    `id` BIGINT ( 20 ) NOT NULL COMMENT 'ID, Phone',
    `nickname` VARCHAR ( 255 ) NOT NULL,
    `password` VARCHAR ( 32 ) DEFAULT NULL COMMENT 'MD5(MD5(password(plain text) + salt) + salt)',
    `salt` VARCHAR ( 10 ) DEFAULT NULL,
    `avater` VARCHAR ( 128 ) DEFAULT NULL COMMENT 'user avater pic url',
-   `last_login_date` DATETIME DEFAULT NULL,
+   `last_login_date` DATETIME DEFAULT NULL,  
    `login_count` INT ( 11 ) DEFAULT '0',
    PRIMARY KEY ( `id` )
-   )`` copy and run the above.
-4. May create a testing data with: ``18520655614	Cyrus	b7797cce01b4b131b433b6acf4add449	1a2b3c4d			0``
-![img_1.png](media/img_1.png)
+   ```
+
+   copy and run the above.
+
+   May create a testing data with: ``18520655614	Cyrus	b7797cce01b4b131b433b6acf4add449	1a2b3c4d			0``
+   ![img_1.png](media/img_1.png)
+
+5. Create a table named `t_goods` in the database, run this SQL script:
+
+  ```sql
+  CREATE TABLE `t_goods` ( 
+  `id` BIGINT ( 20 ) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR ( 16 ) DEFAULT NULL,
+  `title` VARCHAR ( 64 ) DEFAULT NULL,
+  `img` VARCHAR ( 128 ) DEFAULT NULL,
+  `detail` LONGTEXT DEFAULT NULL,
+  `price` DECIMAL ( 10, 2 ) DEFAULT '0.00',
+  `stock` INT ( 11 ) DEFAULT '0' COMMENT '-1 means no limit',
+  PRIMARY KEY ( `id` ) 
+  );
+  ```
+
+  copy and run the above.
+
+  May create a testing data as follows:
+
+![image-20230502150933242](C:\Users\Drink\AppData\Roaming\Typora\typora-user-images\image-20230502150933242.png)
+6. Create a table named `t_order` in the data base, run this SQL script:
+
+   ```sql
+   CREATE TABLE `t_order` ( 
+   `id` BIGINT ( 20 ) NOT NULL AUTO_INCREMENT,
+   `user_id` BIGINT( 20 ) DEFAULT NULL,
+   `goods_id` BIGINT(20) DEFAULT NULL,
+   `goods_name` VARCHAR(16) DEFAULT NULL,
+   `goods_count` INT(11) DEFAULT '0',
+   `goods_price` DECIMAL(10,2) DEFAULT '0.00',
+   `status` INT(4) DEFAULT '0' COMMENT 'order status, 0 for new, 1 for paid, 2 for shipped, 3 for delivered, 4 for finished',
+   `create_date` DATETIME DEFAULT NULL,
+   `pay_date` DATETIME DEFAULT NULL,
+   PRIMARY KEY ( `id` ) 
+   );
+   ```
+
+     copy and run the above.
+
+     May create a testing data as follows:
+
 
 #### Install Redis
+
 1. You can either install Redis on your machine or use Redis Cloud service.
-2. I am using local Redis with WSL on Windows 10, follow this guide 
-to install WSL and setup Ubuntu 20.04: https://docs.microsoft.com/en-us/windows/wsl/install-win10
-3. Follow this guide to install 
-Redis on WSL: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
+2. I am using local Redis with WSL on Windows 10, follow this guide to install WSL and setup Ubuntu 20.04: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+3. Follow this guide to install Redis on WSL: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
 4. Once Redis is installed, you can run`sudo service redis-server start` then run `redis-cli` to connect to Redis server. 
-Take note of the ip address and port number.
-![img.png](media/img.png)
+Take note of the IP address and port number. It is usually `127.0.0.1:6379` if you are running on local machine.
+<img src="media/img.png" alt="img.png" style="zoom:50%;" />
 
 ### Run
 1. Run `SpringwebappApplication.java` in your IDE.

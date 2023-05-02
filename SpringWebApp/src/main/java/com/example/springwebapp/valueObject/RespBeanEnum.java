@@ -1,4 +1,4 @@
-package com.example.springwebapp.variableObject;
+package com.example.springwebapp.valueObject;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

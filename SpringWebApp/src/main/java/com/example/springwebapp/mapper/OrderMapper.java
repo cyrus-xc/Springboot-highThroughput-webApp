@@ -1,7 +1,7 @@
 package com.example.springwebapp.mapper;
 
-import com.example.springwebapp.pojo.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.springwebapp.pojo.Order;
 
 /**
  * <p>
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author Chen XU
- * @since 2023-04-20
+ * @since 2023-05-02
  */
-public interface UserMapper extends BaseMapper<User> {
+public interface OrderMapper extends BaseMapper<Order> {
 
 }

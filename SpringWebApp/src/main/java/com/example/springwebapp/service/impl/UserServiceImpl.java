@@ -7,9 +7,9 @@ import com.example.springwebapp.service.IUserService;
 import com.example.springwebapp.utils.CookieUtil;
 import com.example.springwebapp.utils.UIDGenerator;
 import com.example.springwebapp.utils.md5;
-import com.example.springwebapp.variableObject.LoginVaribaleObject;
-import com.example.springwebapp.variableObject.RespBean;
-import com.example.springwebapp.variableObject.RespBeanEnum;
+import com.example.springwebapp.valueObject.LoginValueObject;
+import com.example.springwebapp.valueObject.RespBean;
+import com.example.springwebapp.valueObject.RespBeanEnum;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,7 +41,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
      * @return
      */
     @Override
-    public RespBean doLogin(LoginVaribaleObject data, HttpServletRequest request, HttpServletResponse response) {
+    public RespBean doLogin(LoginValueObject data, HttpServletRequest request, HttpServletResponse response) {
         // Implement login logic here
         String username = data.getUserName();
         String password = data.getPassword();

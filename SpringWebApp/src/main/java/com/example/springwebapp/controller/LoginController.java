@@ -1,8 +1,8 @@
 package com.example.springwebapp.controller;
 
 import com.example.springwebapp.service.IUserService;
-import com.example.springwebapp.variableObject.LoginVaribaleObject;
-import com.example.springwebapp.variableObject.RespBean;
+import com.example.springwebapp.valueObject.LoginValueObject;
+import com.example.springwebapp.valueObject.RespBean;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
@@ -32,7 +32,7 @@ public class LoginController {
 
     @RequestMapping("/doLogin")
     @ResponseBody
-    public RespBean doLogin(@Valid LoginVaribaleObject data, HttpServletRequest request, HttpServletResponse response) {
+    public RespBean doLogin(@Valid LoginValueObject data, HttpServletRequest request, HttpServletResponse response) {
 //        log.info("userName: " + data.getUserName());
 //        log.info("password: " + data.getPassword());
 //        log.info("{}", data);

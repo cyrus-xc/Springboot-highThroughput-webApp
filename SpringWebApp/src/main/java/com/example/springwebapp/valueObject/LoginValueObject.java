@@ -1,11 +1,10 @@
-package com.example.springwebapp.variableObject;
+package com.example.springwebapp.valueObject;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import org.hibernate.validator.constraints.Length;
 
 @Data
-public class LoginVaribaleObject {
+public class LoginValueObject {
     @NotNull
     private String username;
     @NotNull

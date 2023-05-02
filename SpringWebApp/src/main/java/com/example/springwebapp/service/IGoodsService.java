@@ -1,7 +1,7 @@
 package com.example.springwebapp.service;
 
-import com.example.springwebapp.pojo.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.example.springwebapp.pojo.Goods;
 
 /**
  * <p>
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author Chen XU
- * @since 2023-04-20
+ * @since 2023-05-02
  */
-public interface IUserService extends IService<User> {
+public interface IGoodsService extends IService<Goods> {
 
 }
