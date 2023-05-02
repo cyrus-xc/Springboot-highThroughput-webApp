@@ -36,7 +36,8 @@ Other Java Version should work as well, just change the version in `pom.xml` fil
 to install WSL and setup Ubuntu 20.04: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 3. Follow this guide to install 
 Redis on WSL: https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
-4. Once Redis is installed, you can run `redis-cli` to connect to Redis server. Take note of the ip address and port number.
+4. Once Redis is installed, you can run`sudo service redis-server start` then run `redis-cli` to connect to Redis server. 
+Take note of the ip address and port number.
 ![img.png](media/img.png)
 
 ### Run

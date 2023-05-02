@@ -1,23 +1,25 @@
 package com.example.springwebapp.controller;
 
 import com.example.springwebapp.pojo.User;
-import jakarta.servlet.http.HttpSession;
+import com.example.springwebapp.service.IUserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.thymeleaf.util.StringUtils;
 
 @Controller
 @RequestMapping("/goods")
 public class GoodsController {
+    @Autowired
+    private IUserService userService;
 
     @RequestMapping("/toList")
-    public String toList(HttpSession session, Model model, @CookieValue("userTicket") String ticket) {
-        if (ticket.isEmpty()){
-            return "redirect:/login";
-        }
-        User user = (User) session.getAttribute(ticket);
+    public String toList(Model model, User user) {
+//        if (ticket.isEmpty()){
+//            return "redirect:/login";
+//        }
+////        User user = (User) session.getAttribute(ticket);
+//        User user = userService.getUserByCookie(ticket, request, response);
         if (user == null){
             return "redirect:/login";
         }

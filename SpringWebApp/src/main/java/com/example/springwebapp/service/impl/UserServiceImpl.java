@@ -13,6 +13,7 @@ import com.example.springwebapp.variableObject.RespBeanEnum;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 /**
@@ -28,6 +29,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     /**
      * Login logic
@@ -55,11 +58,25 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         if (!(md5.saltedPassToDBPass(password, user.getSalt()).equals(user.getPassword()))) {
             return RespBean.error(RespBeanEnum.LOGIN_ERROR);
         }
-        // Login success
-        String UID = UIDGenerator.generateUID();
-        request.getSession().setAttribute(UID, user);
-        CookieUtil.setCookie(request, response, "userTicket", UID);
+        // Login success:
+        String ticket = UIDGenerator.generateUID();
+
+        // Store the user information in Redis
+        redisTemplate.opsForValue().set("user:" + ticket, user);
+//        request.getSession().setAttribute(UID, user);
+        CookieUtil.setCookie(request, response, "userTicket", ticket);
 
         return RespBean.ok(RespBeanEnum.SUCCESS);
+    }
+
+    public User getUserByCookie(String userTicket, HttpServletRequest request, HttpServletResponse response) {
+        if (userTicket.isEmpty()) {
+            return null;
+        }
+        User user = (User) redisTemplate.opsForValue().get("user:" + userTicket);
+        if (user != null) {
+            CookieUtil.setCookie(request, response, "userTicket", userTicket);
+        }
+        return user;
     }
 }

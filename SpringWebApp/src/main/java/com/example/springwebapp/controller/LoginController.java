@@ -1,7 +1,7 @@
 package com.example.springwebapp.controller;
 
 import com.example.springwebapp.service.IUserService;
-import com.example.springwebapp.utils.UIDGenerator;
+import com.example.springwebapp.variableObject.LoginVaribaleObject;
 import com.example.springwebapp.variableObject.RespBean;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.example.springwebapp.variableObject.LoginVaribaleObject;
 
 /* Implement login function here
  * @param username
