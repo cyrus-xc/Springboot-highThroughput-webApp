@@ -21,4 +21,6 @@ public interface IGoodsService extends IService<Goods> {
      * @return
      */
     List<GoodsValueObject> listGoods();
+
+    GoodsValueObject getGoodByID(long id);
 }

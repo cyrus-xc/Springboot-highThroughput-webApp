@@ -16,14 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-/**
- * <p>
- *  Service Implementation
- * </p>
- *
- * @author Chen XU
- * @since 2023-04-20
- */
+import java.util.concurrent.TimeUnit;
+
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
@@ -62,7 +56,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         String ticket = UIDGenerator.generateUID();
 
         // Store the user information in Redis
-        redisTemplate.opsForValue().set("user:" + ticket, user);
+        redisTemplate.opsForValue().set("user:" + ticket, user, 7200L, TimeUnit.SECONDS);
 //        request.getSession().setAttribute(UID, user);
         CookieUtil.setCookie(request, response, "userTicket", ticket);
 

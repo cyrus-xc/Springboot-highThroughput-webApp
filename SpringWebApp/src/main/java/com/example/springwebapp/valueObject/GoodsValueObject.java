@@ -1,12 +1,7 @@
 package com.example.springwebapp.valueObject;
 
 import com.example.springwebapp.pojo.Goods;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.math.BigDecimal;
-import java.util.Date;
 
 @Data
 public class GoodsValueObject extends Goods {

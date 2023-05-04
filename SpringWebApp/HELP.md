@@ -5,7 +5,7 @@ MySQL 8.0.22 or higher: https://dev.mysql.com/downloads/mysql/ \
 Redis 6.0.9 or higher: https://redis.io/download \
 Redis Insight (optional UI for Redis): https://redislabs.com/redis-enterprise/redis-insight/ \
 JDK 20 or higher: https://www.oracle.com/java/technologies/javase-downloads.html
-
+JMeter 5.4.1 or higher: https://jmeter.apache.org/download_jmeter.cgi
 
 ### Installation
 #### Import project

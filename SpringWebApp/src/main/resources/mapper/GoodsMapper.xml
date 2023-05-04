@@ -11,16 +11,22 @@
         <result column="detail" property="detail" />
         <result column="price" property="price" />
         <result column="stock" property="stock" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, name, title, img, detail, price, stock
+        id, name, title, img, detail, price, stock, start_time, end_time
     </sql>
-
     <!-- 获取所有商品 -->
     <select id="listGoods" resultType="com.example.springwebapp.valueObject.GoodsValueObject">
         select * from t_goods WHERE stock > 0
+    </select>
+
+    <!-- 根据商品id获取商品 -->
+    <select id="getGoodByID" resultType="com.example.springwebapp.valueObject.GoodsValueObject">
+        select * from t_goods where id = #{id}
     </select>
 
 </mapper>

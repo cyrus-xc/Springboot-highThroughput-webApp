@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base href="/"/>
+    <title>Failed</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- jquery -->
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/bootstrap/css/bootstrap.min.css}" />
+    <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}">
+    </script>
+    <!-- layer -->
+    <script type="text/javascript" th:src="@{/layer/layer.js}"></script>
+    <!-- common.js -->
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+</head>
+<body>
+<div class="panel panel-default">
+    <div class="panel-heading">Order Failed</div>
+    <table class="table" id="order">
+        <tr>
+            <td>Failed</td>
+            <td><p class='alert alert-warning' th:text="${errmsg}">Fail Reason: </p></td>
+            <td>
+                <button class="btn btn-warning btn-block"
+                        id="BackButton" th:width="33" onclick="history.back()">Go back</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+<script>
+    console.log($("#errmsg").text());
+</script>
+</html>

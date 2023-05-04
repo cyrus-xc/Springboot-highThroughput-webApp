@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39db7f16-62fc-4aef-87ab-cdab0d6a22eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+    <list default="true" id="39db7f16-62fc-4aef-87ab-cdab0d6a22eb" name="Changes" comment="clean out code generator">
+      <change afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/resources/templates/goodsDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/pojo/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/pojo/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/IGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/IGoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/valueObject/GoodsValueObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/java/com/example/springwebapp/valueObject/GoodsValueObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringWebApp/src/main/resources/templates/goodsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringWebApp/src/main/resources/templates/goodsList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Drink/Desktop/cs9053-Java-hw-set/FinalProject/MD5_Generator/src/main/resources/templates",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "2c150e0be545dbcc57b5367181dfac8f"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Drink/Desktop/cs9053-Java-hw-set/FinalProject/MD5_Generator/src/main/resources/templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2c150e0be545dbcc57b5367181dfac8f&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Drink\Desktop\cs9053-Java-hw-set\FinalProject\MD5_Generator\src\main\resources\templates" />
@@ -85,6 +97,7 @@
       <workItem from="1682045800542" duration="2369000" />
       <workItem from="1682080488490" duration="1797000" />
       <workItem from="1683056754338" duration="1010000" />
+      <workItem from="1683064679396" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="clean out code generator">
       <created>1683057755275</created>

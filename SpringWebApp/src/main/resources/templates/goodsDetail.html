@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base href="/"/>
+    <meta charset="UTF-8">
+    <title>Item Detail</title>
+    <!-- jquery -->
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+    <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}">
+    </script>
+    <!-- layer -->
+    <script type="text/javascript" th:src="@{/layer/layer.js}"></script>
+    <!-- common.js -->
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+</head>
+<body>
+<div class="panel panel-default">
+    <div class="panel-heading">Item Detail</div>
+    <div class="panel-body">
+        <span th:if="${user eq null}"> Please Login First<br/></span>
+    </div>
+    <table class="table" id="goods">
+        <tr>
+            <td>Item name</td>
+            <td colspan="3" th:text="${goods.name}"></td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td colspan="3" th:text="${goods.title}"></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td colspan="3" th:text="${goods.detail}"></td>
+        </tr>
+        <tr>
+            <td>Images</td>
+            <td colspan="3"><img th:src="@{${goods.img}}"
+                                 height="200"/></td>
+        </tr>
+        <tr>
+            <td>Sales Start Time</td>
+            <td th:text="${#dates.format(goods.startTime, 'yyyy-MM-dd HH:mm:ss')}"></td>
+            <!--            <td>Sales End Time</td>-->
+            <!--            <td th:text="${#dates.format(goods.endTime, 'yyyy-MM-dd HH:mm:ss')}"></td>-->
+
+            <td id="saleStatus">
+                <input type="hidden" id="remainSeconds"
+                       th:value="${remainSeconds}"/>
+                <span th:if="${status eq 0}">
+                    <p class='alert alert-info' id="countDown" th:text="'00:00:00'">Sale open in:<p/>
+                </span>
+                <span th:if="${status eq 1}"><p class='alert alert-info'>Sale in progress...</p></span>
+                <span th:if="${status eq 2}"><p class='alert alert-warning'>Sale has ended.</p></span>
+            </td>
+            <td>
+                <form id="orderForm" method="post"
+                      action="/order/createOrder">
+                    <button class="btn btn-primary btn-block" type="submit"
+                            id="buyButton">Place Order
+                    </button>
+                    <input type="hidden" name="itemID" th:value="${goods.id}"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td colspan="3" th:text="${goods.price}"></td>
+        </tr>
+        <tr>
+            <td>In stock</td>
+            <td colspan="3" th:text="${goods.stock}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+<script>
+    $(function(){
+        countDown();
+    });
+    function countDown(){
+        var remainSeconds = $("#remainSeconds").val();
+        var timeout;
+        if(remainSeconds > 0){
+            $("#buyButton").attr("disabled", true);
+            timeout = setTimeout(function(){
+                var value = format(remainSeconds - 1);
+                $("#countDown").text("Sale open in:" + value);
+                $("#remainSeconds").val(remainSeconds - 1);
+                countDown();
+            },1000);
+        }else if(remainSeconds == 0){
+            $("#buyButton").attr("disabled", false);
+            if(timeout){
+                clearTimeout(timeout);
+            }
+            $("#saleStatus").html("<p class='alert alert-info\'>Sale in progress...</p>");
+        }else{
+            $("#buyButton").attr("disabled", true);
+            $("#saleStatus").html("<p class='alert alert-warning\'>Sale has ended.</p>");
+        }
+    }
+    function format(seconds){
+        let hh = parseInt(seconds / 3600);
+        if(hh < 10){
+            hh = "0" + hh;
+        }
+        let mm = parseInt((seconds - hh * 3600) / 60);
+        if(mm < 10){
+            mm = "0" + mm;
+        }
+        let ss = parseInt(seconds - hh * 3600 - mm * 60);
+        if(ss < 10){
+            ss = "0" + ss;
+        }
+        return hh + ":" + mm + ":" + ss;
+    }
+</script>
+</html>

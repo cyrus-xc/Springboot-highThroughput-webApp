@@ -2,6 +2,8 @@ package com.example.springwebapp.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.springwebapp.pojo.Order;
+import com.example.springwebapp.pojo.User;
+import com.example.springwebapp.valueObject.GoodsValueObject;
 
 /**
  * <p>
@@ -13,4 +15,5 @@ import com.example.springwebapp.pojo.Order;
  */
 public interface IOrderService extends IService<Order> {
 
+    public Order createOrder(GoodsValueObject item, User user);
 }
