@@ -33,7 +33,7 @@ public class LoginController {
     @RequestMapping("/doLogin")
     @ResponseBody
     public RespBean doLogin(@Valid LoginValueObject data, HttpServletRequest request, HttpServletResponse response) {
-//        log.info("userName: " + data.getUserName());
+        log.info("userName: " + data.getUserName());
 //        log.info("password: " + data.getPassword());
 //        log.info("{}", data);
 

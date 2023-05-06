@@ -30,7 +30,7 @@
         </tr>
         <tr>
             <td>Price</td>
-            <td colspan="2" th:text="${order.goodsPrice}"></td>
+            <td colspan="2" th:text="${goods.price}"></td>
         </tr>
         <tr>
             <td>Order Time</td>
@@ -38,7 +38,7 @@
         </tr>
         <tr>
             <td>Order Status</td>
-            <td >
+            <td id="payment_status">
                 <span th:if="${order.status eq 0}">Awaiting Payment</span>
                 <span th:if="${order.status eq 1}">Ready to Ship</span>
                 <span th:if="${order.status eq 2}">Shipped</span>
@@ -48,7 +48,7 @@
             </td>
             <td>
                 <button class="btn btn-primary btn-block" type="submit"
-                        id="payButton">Make Payment</button>
+                        id="payButton" onclick="pay()">Make Payment</button>
             </td>
         </tr>
         <tr>
@@ -58,4 +58,11 @@
     </table>
 </div>
 </body>
+<script>
+    function pay(){
+        $("#payButton").text("Paid");
+        $("#payment_status").text("Ready to Ship");
+    }
+
+</script>
 </html>

@@ -1,11 +1,13 @@
 spring:
   thymeleaf:
     cache: false
+  # MYSQL settings #
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/springwebapp?useUnicode=true&characterEncoding=UTF-8&serverTimezone=America/New_York
     username: root
     password: root
+    # HikariCP settings #
     hikari:
       # connection pool settings
       pool-name: HikariCP
@@ -16,17 +18,42 @@ spring:
       connection-timeout: 30000
       connection-test-query: SELECT 1 # MySQL heartbeat query
       max-lifetime: 1800000 # connection max lifetime, default is 30 minutes
-    redis:
+  # Redis settings #
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 10000ms # 10 seconds
+    time-to-live: 7200 # 2 hours
+    lettuce:
+      pool: # lettuce connection pool settings
+        max-active: 8 # max number of connections
+        max-wait: 10000ms # -1 means no limit
+        max-idle: 0 # max idle connections, 0 means no limit
+  # RabbitMQ settings #
+  rabbitmq:
       host: localhost
-      port: 6379
-      database: 0
-      timeout: 10000ms # 10 seconds
-      time-to-live: 7200 # 2 hours
-      lettuce:
-        pool: # lettuce connection pool settings
-          max-active: 8 # max number of connections
-          max-wait: 10000ms # -1 means no limit
-          max-idle: 0 # max idle connections, 0 means no limit
+      port: 5672
+      username: guest
+      password: guest
+      virtual-host: /
+      connection-timeout: 10000ms # 10 seconds
+      requested-heartbeat: 60 # 60 seconds
+      publisher-confirms: true
+      publisher-returns: true
+      listener:
+          simple:
+          concurrency: 5 # number of concurrent consumers
+          max-concurrency: 10 # max number of concurrent consumers
+          prefetch: 1 # number of messages each consumer can prefetch
+          transaction-size: 1 # number of messages each transaction can handle
+          acknowledge-mode: manual # auto, manual, none
+          retry:
+              enabled: true
+              initial-interval: 1000ms # 1 second
+              max-attempts: 3
+              multiplier: 1.0
+              max-interval: 10000ms # 10 seconds
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml # mapper xml file path

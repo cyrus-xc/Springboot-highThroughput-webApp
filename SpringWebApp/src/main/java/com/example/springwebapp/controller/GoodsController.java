@@ -20,6 +20,8 @@ public class GoodsController {
     @Autowired
     private IGoodsService goodsService;
 
+//    @RequestMapping(value = "/toList", produces = "text/html;charset-utf-8")
+//    @ResponseBody
     @RequestMapping("/toList")
     public String toList(Model model, User user) {
 //        if (ticket.isEmpty()){
@@ -27,9 +29,6 @@ public class GoodsController {
 //        }
 ////        User user = (User) session.getAttribute(ticket);
 //        User user = userService.getUserByCookie(ticket, request, response);
-        if (user == null){
-            return "redirect:/login";
-        }
         model.addAttribute("user", user);
         model.addAttribute("goodsList", goodsService.listGoods());
 
@@ -38,9 +37,7 @@ public class GoodsController {
 
     @RequestMapping("/toDetail/{id}")
     public String toDetail(Model model, User user, @PathVariable("id") long id) {
-        model.addAttribute("user", user);
         GoodsValueObject item =  goodsService.getGoodByID(id);
-
         Date startTime = item.getStartTime();
         Date endTime = item.getEndTime();
         Date curTime = new Date();
@@ -54,9 +51,16 @@ public class GoodsController {
         }else {
             status = 1; // Start
         }
+        model.addAttribute("user", user);
         model.addAttribute("status", status);
         model.addAttribute("goods", item);
         model.addAttribute("remainSeconds", remainSeconds);
         return "goodsDetail";
+//        DetailValueObject detailValueObject = new DetailValueObject();
+//        detailValueObject.setUser(user);
+//        detailValueObject.setGoods(item);
+//        detailValueObject.setRemainSeconds(remainSeconds);
+//        detailValueObject.setStatus(status);
+//        return RespBean.ok(detailValueObject);
     }
 }

@@ -6,6 +6,7 @@ Redis 6.0.9 or higher: https://redis.io/download \
 Redis Insight (optional UI for Redis): https://redislabs.com/redis-enterprise/redis-insight/ \
 JDK 20 or higher: https://www.oracle.com/java/technologies/javase-downloads.html
 JMeter 5.4.1 or higher: https://jmeter.apache.org/download_jmeter.cgi
+RabbitMQ 3.8.19 or higher: https://www.rabbitmq.com/download.html
 
 ### Installation
 #### Import project
@@ -59,7 +60,7 @@ Other Java Version should work as well, just change the version in `pom.xml` fil
 
   May create a testing data as follows:
 
-![image-20230502150933242](C:\Users\Drink\AppData\Roaming\Typora\typora-user-images\image-20230502150933242.png)
+![img_2](C:\Users\Drink\Desktop\Springboot-highThroughput-webApp\SpringWebApp\media\img_2.png)
 6. Create a table named `t_order` in the data base, run this SQL script:
 
    ```sql
@@ -91,9 +92,18 @@ Other Java Version should work as well, just change the version in `pom.xml` fil
 Take note of the IP address and port number. It is usually `127.0.0.1:6379` if you are running on local machine.
 <img src="media/img.png" alt="img.png" style="zoom:50%;" />
 
+#### Install RabbitMQ
+1. Install RabbitMQ on a Linux system is recommended. You can follow this guide to install RabbitMQ on Ubuntu 20.04: https://www.rabbitmq.com/install-debian.html.
+2. Once RabbitMQ is installed, you can run `sudo service rabbitmq-server start` to start RabbitMQ service.
+3. You can check the status of RabbitMQ service by running `sudo service rabbitmq-server status`. Take note of the IP address and Port number.
+4. To access RabbitMQ management console, visit `http://127.0.0.1:15672` to access the management console. The default username and password is `guest`.
+
 ### Run
 1. Run `SpringwebappApplication.java` in your IDE.
 2. Open your browser and visit `http://localhost:8080/login/toLogin`
+
+### HighLights
+1. Page cached with Redis
 
 ### Reference Documentation
 

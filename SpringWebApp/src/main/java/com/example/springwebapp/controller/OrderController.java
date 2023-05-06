@@ -10,6 +10,7 @@ import com.example.springwebapp.service.IUserService;
 import com.example.springwebapp.valueObject.GoodsValueObject;
 import com.example.springwebapp.valueObject.RespBeanEnum;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,6 +33,8 @@ public class OrderController {
     private IUserService userService;
     @Autowired
     private IOrderService orderService;
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @RequestMapping("/createOrder")
     public String createOrder(Model model, User user, long itemID) {
@@ -45,7 +48,8 @@ public class OrderController {
             return "orderFail";
         }
         // check if the user has already bought one item
-        Order order = orderService.getOne(new QueryWrapper<Order>().eq("user_id", user.getId()).eq("goods_id", itemID));
+//        Order order = orderService.getOne(new QueryWrapper<Order>().eq("user_id", user.getId()).eq("goods_id", itemID));
+        Order order = (Order) redisTemplate.opsForValue().get("order:" + user.getId() + ":" + itemID);
         if (order != null) { // already bought
             model.addAttribute("errmsg", RespBeanEnum.valueOf("REPEAT_ERROR").getMsg());
             return "orderFail";
