@@ -102,8 +102,6 @@ Take note of the IP address and port number. It is usually `127.0.0.1:6379` if y
 1. Run `SpringwebappApplication.java` in your IDE.
 2. Open your browser and visit `http://localhost:8080/login/toLogin`
 
-### HighLights
-1. Page cached with Redis
 
 ### Reference Documentation
 

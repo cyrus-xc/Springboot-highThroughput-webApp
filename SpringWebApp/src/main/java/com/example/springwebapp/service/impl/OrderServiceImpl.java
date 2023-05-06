@@ -28,6 +28,18 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     @Autowired
     private RedisTemplate redisTemplate;
 
+    @Override
+    public Long getResult(User user, Long itemID) {
+        Order order = orderMapper.selectOne(new QueryWrapper<Order>().eq("user_id", user.getId()).eq("goods_id", itemID));
+        if (order != null) {
+            return order.getId();
+        }else if(redisTemplate.hasKey("isSoldOut:" + itemID)) {
+            return -1L;
+        }else {
+            return 0L;
+        }
+    }
+
     @Transactional
     @Override
     public Order createOrder(GoodsValueObject item, User user) {
@@ -35,7 +47,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         goods.setStock(goods.getStock() - 1);
         boolean result = goodsService.update(new UpdateWrapper<Goods>().setSql("stock = stock - 1").eq("" +
                 "id", goods.getId()).gt("stock", 0));
-        if (!result) { // if fails
+        if (goods.getStock() < 1) { // if fails
+            redisTemplate.opsForValue().set("isSoldOut:" + item.getId(), "true");
             return null;
         }
         // generate order

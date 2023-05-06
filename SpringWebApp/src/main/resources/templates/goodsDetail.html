@@ -50,6 +50,7 @@
             <td id="saleStatus">
                 <input type="hidden" id="remainSeconds"
                        th:value="${remainSeconds}"/>
+                <input type="hidden" id="status" th:value="${status}"/>
                 <span th:if="${status eq 0}">
                     <p class='alert alert-info' id="countDown" th:text="'00:00:00'">Sale open in:<p/>
                 </span>
@@ -92,7 +93,7 @@
                 $("#remainSeconds").val(remainSeconds - 1);
                 countDown();
             },1000);
-        }else if(remainSeconds == 0){
+        }else if(remainSeconds == 0 && $("#status").val() != 2){
             $("#buyButton").attr("disabled", false);
             if(timeout){
                 clearTimeout(timeout);

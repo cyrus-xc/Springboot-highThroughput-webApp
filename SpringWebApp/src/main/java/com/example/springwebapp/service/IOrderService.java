@@ -15,5 +15,7 @@ import com.example.springwebapp.valueObject.GoodsValueObject;
  */
 public interface IOrderService extends IService<Order> {
 
-    public Order createOrder(GoodsValueObject item, User user);
+    Long getResult(User user, Long itemID);
+
+    Order createOrder(GoodsValueObject item, User user);
 }

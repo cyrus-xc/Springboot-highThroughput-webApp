@@ -18,33 +18,26 @@
 </head>
 <body>
 <div class="panel panel-default">
+    <input type="hidden" id="status" th:value="${orderSuccess}"/>
+    <input type="hidden" id="itemID" th:value="${itemID}"/>
     <div class="panel-heading">Order Detail</div>
-    <table class="table" id="order">
+    <table class="table" id="order" style="display:none">
         <tr>
             <td>Item Name</td>
-            <td th:text="${goods.name}" colspan="3"></td>
-        </tr>
-        <tr>
-            <td>Image</td>
-            <td colspan="2"><img th:src="@{${goods.img}}" height="200" /></td>
+            <td id="item_name" colspan="3"></td>
         </tr>
         <tr>
             <td>Price</td>
-            <td colspan="2" th:text="${goods.price}"></td>
+            <td id="item_price"colspan="2"></td>
         </tr>
         <tr>
             <td>Order Time</td>
-            <td th:text="${#dates.format(order.createDate, 'yyyy-MM-dd HH:mm:ss')}" colspan="2"></td>
+            <td id="order_time" colspan="2"></td>
         </tr>
         <tr>
             <td>Order Status</td>
             <td id="payment_status">
-                <span th:if="${order.status eq 0}">Awaiting Payment</span>
-                <span th:if="${order.status eq 1}">Ready to Ship</span>
-                <span th:if="${order.status eq 2}">Shipped</span>
-                <span th:if="${order.status eq 3}">Delivered</span>
-                <span th:if="${order.status eq 4}">Refunded</span>
-                <span th:if="${order.status eq 5}">Finished</span>
+                <span>Awaiting Payment</span>
             </td>
             <td>
                 <button class="btn btn-primary btn-block" type="submit"
@@ -53,16 +46,94 @@
         </tr>
         <tr>
             <td>Ordered From</td>
-            <td colspan="2" th:text="${user.nickname}"></td>
+            <td colspan="2" id="user_nickname" ></td>
         </tr>
     </table>
 </div>
 </body>
 <script>
+    $(function () {
+        query($("#itemID").val());
+    });
+
+    function showOrder(orderID) {
+        $.ajax({
+            url: "/getOrderDetail",
+            type: "GET",
+            data: {
+                orderID: orderID,
+            },
+            success: function (data) {
+                if (data.code == 200) {
+                    var order = data.obj;
+                    var time = new Date(order.createDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})
+                    $("#item_name").text(order.goodsName);
+                    $("#item_price").text(order.goodsPrice);
+                    $("#order_time").text(time);
+                    $("#user_nickname").text(order.userId);
+                } else {
+                    layer.msg(data.msg);
+                }
+            },
+        })
+    }
+
+    function query(itemID) {
+        g_showLoading("Processing...");
+        $.ajax({
+            url: "/result",
+            type: "GET",
+            data: {
+                itemID: itemID,
+            },
+            success: function (data) {
+                console.log(data);
+                console.log(data.code)
+                console.log(data.obj)
+                if (data.code == 200) {
+                    var result = data.obj;
+                    if (result < 0) {
+
+                        layer.confirm("Item Sold Out.", {
+                            title: ['Sorry'],
+                            btn: ['OK']
+                        }, function(){
+                            history.back();
+                        });
+
+                    } else if (result == 0) {
+
+                        setTimeout(function () {
+                            query();
+                        }, 200);
+
+                    } else {
+
+                        showOrder(result);
+                        var container = document.getElementById("order");
+                        container.style.display = "block";
+                        layer.confirm("Successfully ordered!", {
+                            title: ['Successful'],
+                            btn: ['OK']
+                        });
+
+                    }
+                } else {
+                    layer.msg(data.msg);
+                }
+            },
+            error: function () {
+                layer.msg("Failed to query order details");
+            }
+        })
+    }
+
     function pay(){
         $("#payButton").text("Paid");
         $("#payment_status").text("Ready to Ship");
     }
+
+
 
 </script>
 </html>
