@@ -200,7 +200,7 @@ You can either import the `jmeter.jmx` file in the root directory of this projec
 #### Test Result
 Before RabbitMQ and Redis are introduced, the average Error% is 48.79 and the throughput is 367.9/s.
 
-<img src="README.assets/before.png" alt="img.png" />
+<img src="SpringWebApp/media/before.png" alt="img.png" />
 
 After RabbitMQ and Redis are introduced, the average Error% is 15.48 and the throughput is 1568/s.
 
