@@ -12,7 +12,7 @@ A quick example: new iphone15 is released, but Apple only prepare 1,000 units fo
 
 This is a SpringBoot-based high-concurrency system supports thousands and millions simultaneous visits. It is designed in ***SSM***（Spring+SpringMVC+MyBatis）Structure, with implementations of **Controller layer, MyBatis Mapper layer, DAO(Data Access Object) Layer, Service Layer and View Layer**, which is a detailed version of MVC design pattern.
 
-[^MVC Design Pattern]: <img src="SpringWebApp\media\mvc.jpg" alt="mvc.png" style="zoom: 67%;" />
+[^MVC Design Pattern]: ![mvc](SpringWebApp\media\mvc.jpg)
 
 It uses a Redis database to cache high request data and RabbitMQ to desynchronize client request and server response. It also applied common web optimizations like static web pages and cache markers. Here is the full structure of the project:
 
@@ -50,10 +50,6 @@ It uses a Redis database to cache high request data and RabbitMQ to desynchroniz
 1. RabbitMQ: RabbitMQ service on local Linux server
 2. Redis: Redis service on local Linux server
 3. MySQL: SQL service on local Windows machine
-
-Here is a sample screenshot of the project structure:
-
-<img src="SpringWebApp\media\ide.png" alt="ide" style="zoom: 33%;" />
 
 ### Technology stack
 
