@@ -143,7 +143,7 @@
       <workItem from="1682222257907" duration="1607000" />
       <workItem from="1682226539200" duration="44000" />
       <workItem from="1682226773986" duration="1243000" />
-      <workItem from="1682802432873" duration="108582000" />
+      <workItem from="1682802432873" duration="108884000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy code generator">
       <created>1682048031107</created>
@@ -264,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683433417356</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add instructions to README.md">
+      <created>1683433907404</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683433907404</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
