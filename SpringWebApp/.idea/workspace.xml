@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3cf0dc7-fcc7-49d8-b0f2-a0c6cc665729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/media/mvc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/structure.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/JAVA Final Project.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +145,7 @@
       <workItem from="1682222257907" duration="1607000" />
       <workItem from="1682226539200" duration="44000" />
       <workItem from="1682226773986" duration="1243000" />
-      <workItem from="1682802432873" duration="104973000" />
+      <workItem from="1682802432873" duration="106348000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy code generator">
       <created>1682048031107</created>
@@ -227,7 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683410659543</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add instructions to README.md">
+      <created>1683430022750</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683430022751</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add instructions to README.md">
+      <created>1683430226628</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683430226628</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +256,8 @@
     <MESSAGE value="finish base functions" />
     <MESSAGE value="Support concurrent order creation:&#10;cache order into redis&#10;sql insert/update when stock &gt; 0" />
     <MESSAGE value="all done" />
-    <option name="LAST_COMMIT_MESSAGE" value="all done" />
+    <MESSAGE value="Add instructions to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add instructions to README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

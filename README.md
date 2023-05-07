@@ -1,6 +1,19 @@
 # Getting Started
-
-[TOC]
+- [Getting Started](#getting-started)
+  - [Overview](#overview)
+    - [Functionalities](#functionalities)
+    - [Technology stack](#technology-stack)
+  - [How to Install and run](#how-to-install-and-run)
+    - [Requirements](#requirements)
+    - [Installation](#installation)
+      - [Import project](#import-project)
+      - [Install MySQL](#install-mysql)
+      - [Install Redis](#install-redis)
+      - [Install RabbitMQ](#install-rabbitmq)
+    - [Run](#run)
+  - [Reference](#reference)
+    - [Reference Documentation](#reference-documentation)
+    - [Guides](#guides)
 
 ## Overview
 
@@ -12,11 +25,11 @@ A quick example: new iphone15 is released, but Apple only prepare 1,000 units fo
 
 This is a SpringBoot-based high-concurrency system supports thousands and millions simultaneous visits. It is designed in ***SSM***（Spring+SpringMVC+MyBatis）Structure, with implementations of **Controller layer, MyBatis Mapper layer, DAO(Data Access Object) Layer, Service Layer and View Layer**, which is a detailed version of MVC design pattern.
 
-[^MVC Design Pattern]: ![mvc](SpringWebApp\media\mvc.jpg)
+[^MVC Design Pattern]: <img src="SpringWebApp\media\mvc.jpg" alt="img.png" />
 
 It uses a Redis database to cache high request data and RabbitMQ to desynchronize client request and server response. It also applied common web optimizations like static web pages and cache markers. Here is the full structure of the project:
 
-![structure](SpringWebApp\media\structure.png)
+<img src="SpringWebApp\media\structure.png" alt="img.png" />
 
 
 
@@ -104,7 +117,8 @@ Other Java Version should work as well, just change the version in `pom.xml` fil
    copy and run the above.
 
    May create a testing data with: ``18520655614	Cyrus	b7797cce01b4b131b433b6acf4add449	1a2b3c4d			0``
-   ![img_1.png](SpringWebApp\media\img_1.png)
+
+   <img src="SpringWebApp\media\img_1.png" alt="img.png" />
 
 5. Create a table named `t_goods` in the database, run this SQL script:
 
@@ -125,7 +139,8 @@ Other Java Version should work as well, just change the version in `pom.xml` fil
 
   May create a testing data as follows:
 
-![img_2](SpringWebApp\media\img_2.png)
+<img src="SpringWebApp\media\img_2.png" alt="img.png" />
+
 6. Create a table named `t_order` in the data base, run this SQL script:
 
    ```sql
