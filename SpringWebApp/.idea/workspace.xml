@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3cf0dc7-fcc7-49d8-b0f2-a0c6cc665729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/media/JAVA Final Project.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/pojo/RabbitMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/rabbitmq/MQReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/rabbitmq/MQSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test Plan.jmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/mvc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/structure.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/controller/DataGetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/IOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springwebapp/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/goodsDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/goodsDetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orderDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orderDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/JAVA Final Project.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +148,7 @@
       <workItem from="1682222257907" duration="1607000" />
       <workItem from="1682226539200" duration="44000" />
       <workItem from="1682226773986" duration="1243000" />
-      <workItem from="1682802432873" duration="102696000" />
+      <workItem from="1682802432873" duration="104973000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy code generator">
       <created>1682048031107</created>
@@ -235,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683333191830</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="all done">
+      <created>1683410659543</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683410659543</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +244,8 @@
     <MESSAGE value="item list" />
     <MESSAGE value="finish base functions" />
     <MESSAGE value="Support concurrent order creation:&#10;cache order into redis&#10;sql insert/update when stock &gt; 0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Support concurrent order creation:&#10;cache order into redis&#10;sql insert/update when stock &gt; 0" />
+    <MESSAGE value="all done" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
