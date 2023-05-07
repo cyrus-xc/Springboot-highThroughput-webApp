@@ -102,6 +102,21 @@ Take note of the IP address and port number. It is usually `127.0.0.1:6379` if y
 1. Run `SpringwebappApplication.java` in your IDE.
 2. Open your browser and visit `http://localhost:8080/login/toLogin`
 
+### Test
+To simulate high request flow you want to use JMeter to test the application. You can download JMeter here: https://jmeter.apache.org/download_jmeter.cgi
+you can either import the `jmeter.jmx` file in the root directory of this project or create a new test plan.
+
+1. Open JMeter and create a new test plan.
+2. Add a Thread Group to the test plan with 10,000 users.
+3. Add an HTTP Request to the Thread Group.
+4. Add a View Results Tree and Regression Result to the Thread Group.
+5. Run the test plan and you should see the result in View Results Tree.
+
+#### Test Result
+Before RabbitMQ and Redis are introduced, the average response time is 1.5s and the throughput is 6.5/s.
+
+After RabbitMQ and Redis are introduced, the average response time is 0.5s and the throughput is 20/s.
+
 
 ### Reference Documentation
 
