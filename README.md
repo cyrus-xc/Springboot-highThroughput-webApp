@@ -21,7 +21,7 @@
 
 GitHub: https://github.com/cyrus-xc/Springboot-highThroughput-webApp
 
-This project is a high concurrency online shopping snap up system . It should handle order creation from many users simultaneously and determine which user gets the deal successfully.
+This project is a high concurrency online shopping snap up system . It should handle order creation from hundreds of thousands of users simultaneously and determine which user gets the deal successfully.
 
 A quick example: new iphone15 is released, but Apple only prepare 1,000 units for the first release and there are 5,000 people waiting to buy one on the first day. This system is needed to handle high request flow and create 1,000 orders exactly.
 
